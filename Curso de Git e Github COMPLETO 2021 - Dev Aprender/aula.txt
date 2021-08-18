@@ -1,0 +1,55 @@
+# Ciclo de vida (trabalhando em equipes e projetos maiores)
+1 - Git pull da branch principal
+2 - Gerar uma nova branch a partir da branch principal
+3 - Trabalhar e adicionar novas funcionalidades na nova branch
+4 - Finalizar o trabalho na branch temporária
+5 - Git checkout na branch temporária
+6 - Git pull
+7 - Mergiar(unir) o código da branch temporário com a branch principal(após testar)
+8 - Git push da branch principal
+
+# Comandos diversos
+  git --help --> mostra a ajuda do git
+  git config --list --> mostra as configurações do git em formato de lista
+  git clone https://github.com/Ozcry/Chess.git  --> clona um repositório do github
+
+# Git add --> adiciona os arquivos atuais ao próximo commit
+  git add *
+  git add "arquivo"
+  git add .
+
+# Iniciar o git
+  git init
+
+# Git commit
+  git commit -m "mensagem do commit" --> cria um commit com uma mensagem
+  git reflog --> mostra o histórico de commits
+  git reset --hard "código SHA1" --> volta para uma versão do código anterior
+
+# Git push
+  git push --> manda o condigo do repositório local para o remoto
+
+# Git status --> nos mostra se tem alguma pendência no git
+  git status
+
+# Configuração inicial git --> utilizar caso seja a primeira vez utilizando o git
+    git config --global user.email "meu email" --> configura o email
+    git config --global user.name "meu nome" --> escolhe o nome do usuário (mesmo do servidor remoto de preferência)
+      git config --global --unset user.name --> reseta o nome na config
+
+# Git remote
+  git remote -v --> lista os repositórios remotos que tenho cadastrados
+  git remote add origin https://github.com/Ozcry/livro-receitas.git --> adiciona o endereço do servidor remoto ('origin'
+   é usado por convenção como apelido, para não ficar escrevendo o link toda hr)
+
+# Git branch
+  git branch --> exibe as branch disponíveis no momento
+  git branch staging --> cria uma branch ('staging' é um nome usado por convenção)
+  git checkout (nome da branch) --> muda de branch
+  git checkout -b "nome da branch de origem" "nome da nova branch" --> permite mudar e criar uma branch com base em outra
+
+# Git merge --> unindo duas branch
+  git merge "branch a receber merge"
+
+# Git pull --> puxa os arquivos do servidor remoto
+  git pull origin master
