@@ -1,0 +1,26 @@
+# Algoritmo
+Um algoritmo é um conjunto de instruções que realizam uma tarefa.
+
+
+# Pesquisa Binária
+A pesquisa binária é um algoritmo, sua entrada é uma lista ordenada de elementos. Se o elemento que você está buscando
+esta na lista, a pesquisa binária retorna a sua localização. Caso contrário a pesquisa binária retorna None.
+Com a pesquisa binária, você chuta um número intermediário e elimina a metade dos números restantes a cada vez.
+Para uma lista de n números, a pesquisa binaria precisa de log²n para retornar o valor correto.
+
+
+# Notação Bin O
+A notação bin O é uma notação especial que diz o quão rápido é um algoritmo.
+A notação bin O permite que você compare o número de operações. Ela informa o quão rapidamente um algoritmo cresce.
+A notação bin O considera o pior caso.
+Além do tempo de execução para o pior dos casos é importante analisar o tempo de execução para o "caso médio".
+
+- O(log n) --> Tempo Logarítmico --> Pesquisa Binária
+- O(n) --> Tempo Linear --> Pesquisa Simples
+- O(n * log n) --> Ordenação Quicksort
+- O(n²) --> Ordenação por Seleção
+- O(n!) --> Tempo Fatorial --> Caixeiro Viajante
+
+* A rapidez de um algoritmo não é medida em segundos, mas pelo crescimento do número de operações.
+* O(log n) é mais rápido do que O(n), e O(log n) fica ainda mais rápido conforme a lista aumenta.
+* O tempo de execução em algoritmos é expresso na notação bin O.
